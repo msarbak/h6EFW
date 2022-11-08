@@ -9,7 +9,7 @@ namespace h6EFW.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder OptionsBuilder)
         {
-            OptionsBuilder.UseSqlServer();
+            OptionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Kitaplik;Trusted_Connection=True;");
 
         }
     }

@@ -6,5 +6,7 @@
         public string KitapAdi { get; set; }
 
         public Yazar Yazar { get; set; }
+
+        public int KitapSayfasi { get; set; }
     }
 }
