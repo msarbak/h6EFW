@@ -7,6 +7,10 @@ namespace h6EFW.Models
         public DbSet<Kitap> Kitaplar { get; set; }
         public DbSet<Yazar> Yazarlar { get; set; }
 
-        protected override void OnConfiguring(DBContextBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder OptionsBuilder)
+        {
+            OptionsBuilder.UseSqlServer();
+
+        }
     }
 }
