@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using h6EFW.Models;
 
@@ -11,9 +12,11 @@ using h6EFW.Models;
 namespace h6EFW.Migrations
 {
     [DbContext(typeof(KitaplikContext))]
-    partial class KitaplikContextModelSnapshot : ModelSnapshot
+    [Migration("20221108083212_yazarhatassi")]
+    partial class yazarhatassi
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
